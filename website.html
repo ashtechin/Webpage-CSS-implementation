@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Website</title>
+	<link rel="stylesheet" href="website.css">
+</head>
+	<body>
+	<nav>
+		<ul class="topnav" id="dropdownClick">
+			<li> <a href="#home">Home</a></li>
+			<li> <a href="#about">About</a></li>
+			<li> <a href="#news">News</a></li>
+			<li> <a href="#contacts">Contacts</a></li>
+			<li class="topnav-right"> <a href="#signup">Sign Up</a></li>
+			<li class="topnav-right"> <a href="#login">Log In</a></li>
+			<li class="dropDownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+		</ul>
+	</nav>
+	<div class="container" id="section-1-gradient">
+		<div class="row">
+			<div class="col-6">
+				<div class="lSide-col">
+					<h1 class="large">Website</h1>
+					<h2>For Devs</h2>
+				</div>
+			</div>
+			<div class="col-6">
+				<form>
+					<div class="lSide-col">
+						<h3>Username</h3>
+						<input class="inputbox" name="username" type="text" placeholder="Username">
+						<h3>Password</h3>
+						<input class="inputbox" name="password" type="text" placeholder="Password">
+					</div>
+				</form>
+			</div>
+			<div class col-6>
+				<div class="rSide-col">
+					<div class="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/d4Zb4f4rnL4"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		
+	</header>
+
+	<script>
+	function dropdownMenu(){
+		var x=document.getElementById("dropdownClick");
+		if(x.className === "topnav"){
+			x.className += " responsive";
+		}
+		else {
+			x.className="topnav";
+		}
+	}
+	</script>
+	</body>
+</html>
